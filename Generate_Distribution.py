@@ -6,7 +6,7 @@ def Generate_Distribution(type_space):
         rands = [random.random() for i in range(len(type_space))]
         s = sum(rands)
         rands = [ i/s for i in rands ]
-        vals = Virtual_Values(rands,type_space)
+        vals = Virtual_Values.Virtual_Values(rands,type_space)
         sums = vals[-2]*(rands[-2]/sum(rands[-2:])) + (rands[-1]/sum(rands[-2:]))
         count = 0
         for j in range(len(type_space)-1):
