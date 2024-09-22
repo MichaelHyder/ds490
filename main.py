@@ -1,3 +1,7 @@
+from Virtual_Values import Virtual_Values
+from Generate_Distribution import Generate_Distribution
+from Ironing import Ironing
+
 def main():
     type_space_input = input("Enter your type space separated by commas (e.g., 1,2,3,4,5): ")
     type_space = [float(num) for num in type_space_input.split(",")] 
