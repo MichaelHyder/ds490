@@ -25,20 +25,20 @@ def main():
         
     elif choice == "no" or choice == "No":
         print("Your distribution will be generated, this might take a moment.")
-        distribution = Generate_Distribution.Generate_Distribution(type_space)
+        distribution = Generate_Distribution(type_space)
         print("Here is your distribution! ", distribution)
         
     else:
         print("You need a distribution! A distriubtion will be generated for you now, this might take a moment.")
-        distribution = Generate_Distribution.Generate_Distribution(type_space)
+        distribution = Generate_Distribution(type_space)
         print("Here is your distribution! ", distribution)
     
     choice_2 = input("Do you want to see the virtual values of this distribution? If so, type yes, if not, type no: ")
     if choice_2 == "yes" or choice == "Yes":
-        vv = Virtual_Values.Virtual_Values(distribution,type_space)
+        vv = Virtual_Values(distribution,type_space)
         print("Here are your virtual values! ", vv)
         
     choice_3 = input("Do you need this ironed? If so, type yes, if not, type no: ")
     if choice_3 == "yes" or choice == "Yes":
-        ironed = Ironing.Ironing(distribution,type_space)
+        ironed = Ironing(distribution,type_space)
         return "Here are your ironed values!", ironed
