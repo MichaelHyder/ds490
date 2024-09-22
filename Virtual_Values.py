@@ -1,3 +1,5 @@
+import numpy as np
+
 def cdf(array,i):
     ans = 0
     for pdf in array[i:]:
