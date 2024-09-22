@@ -13,3 +13,11 @@ def Theta(distribution,type_space,i):
         return virt_val
     else:
         return ((t[i]-t[i-1])*cdf(f, i))/f[i]
+
+def Virtual_Values(distribution, type_space):
+    
+    virt_values = np.array([])
+    for i in range(len(distribution)):
+        virt_values = np.append(virt_values, Theta(distribution, type_space, i))
+        
+    return virt_values
