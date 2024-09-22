@@ -1,3 +1,5 @@
+import random 
+
 def Generate_Distribution(type_space):
     
     for i in range(1000000):
