@@ -1,4 +1,5 @@
 import copy
+from Virtual_Values import Virtual_Values
 
 def Ironing(distribution, type_space):
     v_v = Virtual_Values.Virtual_Values(distribution, type_space)
