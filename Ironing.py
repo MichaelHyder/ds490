@@ -1,4 +1,3 @@
-import random 
 import copy
 
 def Ironing(distribution, type_space):
