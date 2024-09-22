@@ -1,7 +1,7 @@
 import copy
 
 def Ironing(distribution, type_space):
-    v_v = Virtual_Values(distribution, type_space)
+    v_v = Virtual_Values.Virtual_Values(distribution, type_space)
     original_vv = copy.deepcopy(v_v)
 
     for i in range(len(v_v)-1):
