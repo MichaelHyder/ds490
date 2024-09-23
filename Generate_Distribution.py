@@ -13,7 +13,7 @@ def Generate_Distribution(type_space):
         for j in range(len(type_space)-1):
             if vals[j+1] > vals[j]:
                 count +=1
-                if count == len(type_space)-3 and sums > vals[-3]:
+                if count >= len(type_space)-2 and sums > vals[-3]:
                     return rands
             else:
                 break
