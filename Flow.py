@@ -19,8 +19,8 @@ def Flow(type_space, distribution, flows):
     lagrangian = [0] + lagrangian
     distribution = [0] + distribution
     
-    for v_1 in range(len(type_space)):
-        for v_2 in range(v_1 + 1,len(type_space)):
+    for v_1 in range(1, len(type_space)):
+        for v_2 in range(v_1,len(type_space)):
             if ironed[v_1] < ironed[v_2]:
                 ans_ironed += distribution[v_1] * distribution[v_2] * ironed[v_2]
             else: 
