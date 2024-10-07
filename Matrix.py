@@ -24,7 +24,7 @@ def Matrix(type_space):
             break
         col = int(input("Enter the column index to replace: "))
         value = input("Enter the new value (e.g 0.5 or 1/2 or 2 * 1/4): ")
-        evaluate = round(eval(value), 4)
+        evaluate = round(eval(value), 5)
         print(evaluate)
         
         replace_value(matrix, row, col, evaluate)
