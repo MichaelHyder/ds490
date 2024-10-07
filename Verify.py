@@ -1,3 +1,6 @@
+from Matrix import Matrix
+from Flow import Flow
+
 def Verify():
     type_space_input = input("Enter your type space separated by commas. Do NOT include the source (e.g., 1,2,3,4,5): ")
     type_space = [float(num) for num in type_space_input.split(",")] 
@@ -19,4 +22,4 @@ def Verify():
         
     matrix = Matrix(type_space)
     
-    return flow(type_space, distribution, matrix)
+    return Flow(type_space, distribution, matrix)
