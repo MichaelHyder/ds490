@@ -1,7 +1,7 @@
 from Ironing import Ironing
 import numpy as np
 
-def flow(type_space, distribution, flows):
+def Flow(type_space, distribution, flows):
     ironed = Ironing(distribution,type_space)
     ironed = np.insert(ironed,0,0)
     type_space = [0] + type_space
