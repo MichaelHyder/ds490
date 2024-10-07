@@ -7,7 +7,7 @@ def Verify():
     
     while True:
             try:
-                distribution_input = input("Enter your distribution separated by commas (e.g., 0.2,0.2,0.2,0.2,0.2): ")
+                distribution_input = input("Enter your distribution separated by commas (e.g., 0.2,1/5,0.2,1/10,0.3): ")
                 distribution = [eval(num) for num in distribution_input.split(",")] 
                 if len(distribution)==len(type_space) and 1.000001 > sum(distribution) > 0.999999:
                     break  
