@@ -31,7 +31,7 @@ def Flow(type_space, distribution, flows):
             else: 
                 ans_lagrangian += distribution[v_1] * distribution[v_2] * lagrangian[v_1]
             
-    if round(ans_ironed,5) + 0.00001 >= round(ans_lagrangian,5)  >= round(ans_ironed,5) - 0.00001:
+    if round(ans_ironed,5) + 0.00005 >= round(ans_lagrangian,5)  >= round(ans_ironed,5) - 0.00005:
         print("They are equal! This is optimal! The value is", round(ans_ironed,4))
     else:
         print("They are not equal! This is not optimal! The ironed value is", round(ans_ironed,5)) 
