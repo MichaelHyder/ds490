@@ -11,8 +11,8 @@ def replace_value(matrix, row, col, value):
     else:
         print("Invalid index!")
 
-def Matrix():
-    size = int(input("Enter the size of the square matrix (Including the source): "))
+def Matrix(type_space):
+    size = len(type_space)+1
     matrix = create_zero_matrix(size)
     
     print("Initial matrix:")
