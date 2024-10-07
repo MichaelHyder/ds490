@@ -23,7 +23,7 @@ def Matrix(type_space):
         if row == -1:
             break
         col = int(input("Enter the column index to replace: "))
-        value = input("Enter the new value: ")
+        value = input("Enter the new value (e.g 0.5 or 1/2 or 2 * 1/4): ")
         evaluate = round(eval(value), 4)
         print(evaluate)
         
